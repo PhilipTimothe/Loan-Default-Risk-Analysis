@@ -12,6 +12,4 @@
 
 ## 📅 02-05-2025
 
-✅ Created rough draft of readme project summary and instuctions.
-✅ Created a folder structure for clarity and scalability.
-✅ Created a change log to routinely perform contribution tracking.
+✅ Data csv and initial EDA performed
