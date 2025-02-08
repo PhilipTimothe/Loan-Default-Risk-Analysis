@@ -13,3 +13,7 @@
 ## 📅 02-05-2025
 
 ✅ Data csv and initial EDA performed
+
+## 📅 02-08-2025
+
+✅ Initial data exploration and cleaning
