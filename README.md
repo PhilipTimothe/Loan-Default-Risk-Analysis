@@ -5,13 +5,13 @@
 Loan default is a significant issue in the finance industry, costing billions annually.
 This project aims to build a **predictive model** that identifies high-risk borrowers and recommends **data-driven strategies** to minimize loan defaults.
 
-## 🎯 Business Objectives
+## Business Objectives
 
 - Identify key factors influencing loan defaults.
 - Predict default risk using machine learning models.
 - Recommend approval strategies for financial institutions.
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **Python** (Pandas, Scikit-learn, Matplotlib, Seaborn)
 - **SQL** (for data extraction and querying)
@@ -27,16 +27,20 @@ This project aims to build a **predictive model** that identifies high-risk borr
 - `src/` – Python scripts for data processing and model training
 - `dashboards/` – Power BI or Tableau dashboards
 
-## 📊 Key Insights (To Be Updated)
+## EDA - Exploratory Data Analysis
 
-- Early EDA shows that **low credit scores and high debt-to-income ratios** significantly increase default risk.
-- Logistic Regression currently achieves **80% accuracy** in predicting defaults.
+### Distribution of Credit Limits
 
-## 🚀 Next Steps
+- Most customers have credit limits **below $200,000**, with a **right-skewed distribution**.
+- Higher credit limits may indicate **lower risk**, while low credit customers may have **higher default rates**.
+  ![Credit Limit Distribution](images/Distribution_of_Credit_Limits.png)
 
-- Fine-tune models to improve precision.
-- Deploy an interactive dashboard for loan officers.
-- Expand dataset with real-time lending data.
+### Repayment Status Over Time
+
+- Customers with **delayed payments in earlier months** tend to continue **defaulting**.
+- Many **outliers (dots)** represent **chronic late payers**, indicating **high-risk borrowers**.
+- Financial institutions should **intervene early** when a customer **misses a payment**.
+  ![Repayment Status Over Time](images/Payment_Behavior_Over_Time.png)
 
 ## 👥 Contributors
 

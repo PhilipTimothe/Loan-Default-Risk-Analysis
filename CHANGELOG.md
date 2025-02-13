@@ -24,3 +24,9 @@
 ✅ Cleaning completed
 ✅ Categorical standarization for 3 features
 ✅ Initial Correlation analysis
+
+## 📅 02-13-2025
+
+✅ EDA continual progress
+✅ Initial visual representation of data created
+✅ Findings reported within readme file
