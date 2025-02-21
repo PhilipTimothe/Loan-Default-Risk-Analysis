@@ -42,9 +42,25 @@ This project aims to build a **predictive model** that identifies high-risk borr
 - Financial institutions should **intervene early** when a customer **misses a payment**.
   ![Repayment Status Over Time](images/Payment_Behavior_Over_Time.png)
 
+## Feature Importance Analysis
+
+Using **Random Forest Feature Importance**, we identified the most critical factors affecting loan default.
+
+**Top Predictive Features:**
+
+1. **Recent Payment Delays (`PAY_0`, `PAY_2`)** – The most influential factors.
+2. **Credit Limit (`LIMIT_BAL`)** – Higher limits are associated with lower default risk.
+3. **Bill Statement Amounts (`BILL_AMT1-6`)** – Outstanding debts significantly impact risk.
+4. **Past Payment Amounts (`PAY_AMT1-6`)** – Indicates a borrower’s financial responsibility.
+
+**Feature Importance Visualization:**
+![Feature Importance](images/Top_Feature_Importance.png)
+
 ## Model Performance & Comparisons
 
-### **Logistic Regression Results**
+Trained and evaluated multiple models, including **Logistic Regression and Random Forest**. Below are their performance metrics:
+
+### **Logistic Regression Results with SMOTE**
 
 | Metric    | Score |
 | --------- | ----- |
@@ -65,6 +81,9 @@ This project aims to build a **predictive model** that identifies high-risk borr
 | F1-Score  | 0.94  |
 | Accuracy  | 0.90  |
 
+**Model Performance Visualization:**
+![Model Performance](images/Model_Performance_Comparision.png)
+
 - **SMOTE (Synthetic Minority Over-sampling Technique) improved recall** for high-risk borrowers.
 - Random Forest achieved a better balance of **precision and recall** compared to Logistic Regression.
 
@@ -74,6 +93,19 @@ This project aims to build a **predictive model** that identifies high-risk borr
 - **Random Forest performed better overall**, making it the preferred model for this use case.
 - **Future Work:** Fine-tuning hyperparameters and exploring additional models like XGBoost.
 
+## 📢 Business Recommendations
+
+1. **Early Intervention:**  
+   Customers with **early payment delays (PAY_0, PAY_2)** should be flagged for **risk monitoring**.
+2. **Credit Limit Adjustments:**  
+   Borrowers with **low credit limits** and **high repayment issues** should undergo **stricter approval checks**.
+
+3. **Payment Behavior Monitoring:**  
+   Implement a **real-time alert system** for customers showing **consistent delayed payments**.
+
+4. **Automated Risk-Based Interest Rates:**  
+   Adjust loan interest rates dynamically based on **default probability scores**.
+
 ## 👥 Contributors
 
-- **Philip Timothe** – Business Analyst & Project Lead
+- **Philip Timothe** – Business/Data Analyst and Engineer & Project Lead
