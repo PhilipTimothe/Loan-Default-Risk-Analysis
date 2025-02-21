@@ -42,6 +42,38 @@ This project aims to build a **predictive model** that identifies high-risk borr
 - Financial institutions should **intervene early** when a customer **misses a payment**.
   ![Repayment Status Over Time](images/Payment_Behavior_Over_Time.png)
 
+## Model Performance & Comparisons
+
+### **Logistic Regression Results**
+
+| Metric    | Score |
+| --------- | ----- |
+| Precision | 0.93  |
+| Recall    | 0.95  |
+| F1-Score  | 0.94  |
+| Accuracy  | 0.89  |
+
+- **Logistic Regression performed well** but struggled with recall for high-risk borrowers.
+- **Best Parameters:** `{'C': 0.001, 'solver': 'lbfgs'}`
+
+### **Random Forest with SMOTE**
+
+| Metric    | Score |
+| --------- | ----- |
+| Precision | 0.97  |
+| Recall    | 0.91  |
+| F1-Score  | 0.94  |
+| Accuracy  | 0.90  |
+
+- **SMOTE (Synthetic Minority Over-sampling Technique) improved recall** for high-risk borrowers.
+- Random Forest achieved a better balance of **precision and recall** compared to Logistic Regression.
+
+## 🔍 Key Insights
+
+- **SMOTE improved the model's ability to detect high-risk borrowers** by increasing recall.
+- **Random Forest performed better overall**, making it the preferred model for this use case.
+- **Future Work:** Fine-tuning hyperparameters and exploring additional models like XGBoost.
+
 ## 👥 Contributors
 
 - **Philip Timothe** – Business Analyst & Project Lead
